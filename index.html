@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>FOURganize</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 60%;
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+        background-color:	#FFF9FC;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+   <center><h1>Time Manager</h1></center>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- <form class="example" action="action_page.php">
+     <input type="text" placeholder="Search.." name="search">
+     <button type="submit"><i class="fa fa-search"></i></button>
+   </form> -->
+
+
+   <h2>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="A simple Pomo Timer">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <title>Pomo Timer</title>
+   </h2>
+
+
+   <div class="container">
+     <div class="timer">
+       <div class="clock"><span contenteditable="true" id="min">10</span><span>:</span><span contenteditable="true" id="sec">10</span>
+         <div class="indicators">Min&nbsp;&nbsp;:&nbsp;&nbsp;Sec</div>
+       </div>
+
+     </div>
+     <div class="controls">
+       <div class='stBtn'>Start</div>
+       <div class='refresh'>Reset</div>
+     </div>
+     <div class="footer" align="center">Click on the numbers of the timer to edit</div>
+   </div>
+   <script src="javascipt.js"></script>
+
+
+    <!-- <p id="Info">Input assignments in order of what you want completed.</p>
+    <p id= "Assignments"> Assignment <center> Time</center></p> -->
+
+
+
+    <p id="info"> Input assignments in order of what you want completed.</p>
+
+    <div style="overflow-x:auto;">
+      <p id="clock">Clock</p>
+      <table id= "mytable">
+        <tr>
+          <th>Assignment:</th>
+          <th>Time (total minutes):</th>
+        </tr>
+        <tr>
+          <td><input type="text" name= "fname"></td>
+          <td><input type = "text" name= "lname"></td>
+        </tr>
+      </table>
+      <button id= "button" onclick="new_row()">Add Assignment</button>
+      <p id="demo"></p>
+      <!-- <button id= "button" onclick="myFunction()">Total time</button> -->
+      <script>
+      var i=0;
+      function new_row() {
+        var table = document.getElementById("mytable");
+        var row = table.insertRow(i-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(0);
+        var cell3 = row.insertCell(1);
+        var cell4 = row.insertCell(1);
+        // cell1.innerHTML = "text";
+        cell1.insertHTML ='<td><input type = "text" name= "lname">';
+        cell2.innerHTML = '<td><input type = "text" name= "lname">';
+        cell3.insertHTML ='<td><input type = "text" name= "lname">';
+        cell4.innerHTML = '<td><input type = "text" name= "lname">';
+      }
+
+
+      // function myFunction() {
+      //   var list = ["Banana", "Orange", "Apple", "Mango"];
+      //   fruits.toString();
+      //   document.getElementById("demo").innerHTML = fruits;
+      // }
+
+      </script>
+      <p id= "break"> You will get a 5 minute break in between each assignment :)</p>
+      <center><p id= "total"> Total Time: </p></center>
+
+      <script src="javascipt.js"></script>
+</body>
+</html>
