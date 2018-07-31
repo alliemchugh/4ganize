@@ -107,21 +107,12 @@ displayArea.insertAdjacentHTML('beforeend', counter);
     // var timeCell = currentRow.cells[1].children[0].value;
 
 }
-function randomword(){
-  var myArray = ['Make a study timetable','Put your phone away while studying', 'Close all tabs on computer that your are not using','Simplify your notes']
-  var item = myArray[(Math.random()*myArray.length)|0];
-  var displayArea=document.getElementById("hiiii");
-  displayArea.insertAdjacentHTML('beforeend', item);
-  // console.log('item:', item);
 
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
 }
 
-function hide_show() {
-    // var item = document.getElementById("hiiii");
-    if (info.style.display === "none") {
-        info.style.display = "block";
-    } else {
-        info.style.display = "none";
-    }
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
-button.onclick=hide_show
