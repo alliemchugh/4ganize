@@ -51,12 +51,10 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index4.html">Home</a>
-    <a href="#">Calendar</a>
+    <a href="calendar.html">Calendar</a>
     <a href="index5.html">Study Tips</a>
-    <a href="#">Stress Relief</a>
+    <a href="stressrelief.html">Stress Relief</a>
     <a href="index.html">Time Manager</a>
-    <a href="#">FAQ</a>
-    <a href="#">Help</a>
   </div>
   <d><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img src="favicon.ico"></span></d>
   <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
@@ -64,22 +62,22 @@
   <p><h6><center>What would you like tips on today?</center></h6></p>
   <div id="prof"><img src="empty-profile.png" height="46" width="46"></div>
   <div id="notif"><img src="notificationbell.png" height="46" width="46"></div>
-  <p><center><button id = "button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+  <p><center><button id = "buttonF" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
     <c>Focus</c>
   </button>
-   <button id = "button1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+   <button id = "buttonA" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     <c>Effectivity</c>
   </button>
-  <button id = "button2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+  <button id = "buttonB" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
    <c>Memory</c>
  </button>
- <button id = "button3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+ <button id = "buttonC" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
   <c>Test-taking</c>
 </button>
-<button id = "button4" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+<button id = "buttonD" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
  <c>Note-taking</c>
 </button>
-<button id = "button5" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+<button id = "buttonE" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
  <c>General</c>
 </button>
 </center></p>
@@ -88,7 +86,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <!-- <h5 class="modal-title" id="exampleModalLabel1">Login</h5> -->
+
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -103,11 +101,11 @@
                 <li>Simplify your notes</li>
               </ul>
               </div>
-            </form>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Go back</button>
-            <!-- <button href = "index4.html" type="button" class="btn btn-primary">Done</button> -->
+
           </div>
         </div>
       </div>
@@ -127,17 +125,17 @@
           <div class="modal-body">
             <form action="action_page.php" style="border:1px solid #ccc">
               <div class="container">
-                <ul>
+
                 <li>Do not cram before a test! Take shorter but more study periods</li>
                 <li>Give yourself a certain amount of time to complete a task</li>
                 <li>Identify all the task you want to complete before you start</li>
                 <li>Do not multitask! Focus on one assignment at a time</li>
                 <li>Make sure you work in a clean environment I.E. your desk</li>
-              </ul>
-
-
               </div>
-            </form>
+
+
+
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Go Back</button>
@@ -167,7 +165,7 @@
                 <li>Repetition is the best way to remember something</li>
               </ul>
 
-            </form>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Go back</button>
@@ -190,15 +188,14 @@
         <div class="modal-body">
           <form action="action_page.php">
             <div class="container">
-              <ul>
-              <li>Get enough sleep the night before the test</li>
-              <li>Read each question carefully</li>
-              <li>Do not stay on a question for to long. If you do not know the answer skip the question and come back to it.</li>
-              <li>After you have finished all the questions, go back through the test and check your answers</li>
-              <li>If a question is confusing to you, do not hesitate to ask teacher for clarification.</li>
-            </ul>
 
-          </form>
+              <p>Get enough sleep the night before the test</p>
+              <p>Read each question carefully</p>
+              <p>Do not stay on a question for to long. If you do not know the answer skip the question and come back to it.</p>
+              <p>After you have finished all the questions, go back through the test and check your answers</p>
+              <p>If a question is confusing to you, do not hesitate to ask teacher for clarification.</p>
+
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Go back</button>
@@ -229,7 +226,7 @@
             <li>Keeps your notes concise! do not write information that is not necessary</li>
           </ul>
 
-        </form>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Go back</button>
@@ -260,7 +257,7 @@
             <li>Eat dark leafy greens that have a large amount of B6 and B12 which are associated with improvements in alertness and memory</li>
           </ul>
 
-        </form>
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Go back</button>
