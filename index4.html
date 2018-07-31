@@ -54,21 +54,20 @@
     }
     </style>
     </head>
-    <body>
+
+    <body id="homepage" onload="injectName()">
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index3.html">Home</a>
-      <a href="#">Calendar</a>
+      <a href="index4.html">Home</a>
+      <a href="calendar.html">Calendar</a>
       <a href="index5.html">Study Tips</a>
-      <a href="#">Stress Relief</a>
+      <a href="stressrelief.html">Stress Relief</a>
       <a href="index.html">Time Manager</a>
-      <a href="#">FAQ</a>
-      <a href="#">Help</a>
     </div>
     <d><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img src="favicon.ico"></span></d>
     <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-    <div id="hello"><center>Hello, _______. </center></div>
+    <center><p id="hello"></p></center>
     <p><h6><center>What would you like to work on today?</center></h6></p>
     <div id="prof"><img src="empty-profile.png" height="46" width="46"></div>
     <div id="notif"><img src="notificationbell.png" height="46" width="46"></div>
@@ -76,7 +75,20 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script>
 
+    var myObject = {
+        // firstName: document.getElementById('firstname'),
+        firstName: document.getElementById("firstname"),
+        greeting: function() {
+            return "Hello " + this.firstName + ".";
+        }
+    }
+
+    document.getElementById("hello").innerHTML = myObject.greeting();
+
+
+    </script> -->
   </body>
 
 </html>
