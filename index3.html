@@ -55,17 +55,15 @@
     </style>
 
     </head>
-    <body>
+    <body id="homepage">
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index3.html">Home</a>
-      <a href="#">Calendar</a>
+      <a href="calendar.html">Calendar</a>
       <a href="index5.html">Study Tips</a>
-      <a href="#">Stress Relief</a>
+      <a href="stressrelief.html">Stress Relief</a>
       <a href="index.html">Time Manager</a>
-      <a href="#">FAQ</a>
-      <a href="#">Help</a>
     </div>
     <d><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img src=favicon.ico></span></d>
     <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
@@ -98,7 +96,8 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button href = "index4.html" type="button" class="btn btn-primary">Login</button>
+              <button type="button" onclick = "location.href='index4.html';" class="btn btn-primary">Login</button>
+              <!-- <input type="button" onclick="location.href='http://google.com';" value="Go to Google" /> -->
             </div>
           </div>
         </div>
@@ -122,6 +121,10 @@
                   <h4>Sign Up</h4>
                   <p>Please fill in this form to create an account.</p>
                   <hr>
+                  <p><label for="firstname"><b>First Name</b></label>
+                  <input id="firstname" type="text" placeholder="Enter First Name" name="firstname" required></p>
+                  <p><label for="lastname"><b>Last Name</b></label>
+                  <input type="text" placeholder="Enter Last Name" name="lastname" required></p>
                   <p><label for="email"><b>Email</b></label>
                   <input type="text" placeholder="Enter Email" name="email" required></p>
                   <p><label for="psw"><b>Password</b></label>
@@ -133,16 +136,17 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Sign Up</button>
+              <button onclick=firstName() type="button" class="btn btn-primary">Sign Up</button>
             </div>
           </div>
         </div>
       </div>
+
     <script src="javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+
   </body>
 
 </html>
