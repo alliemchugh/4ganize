@@ -6,226 +6,269 @@
   <title> Stress Relief </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  <title>Stress Relief </title>
+
+  <style>
+    /*<!--all info here!-->*/
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        /* margin-left: 5px; */
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 15px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 36px;
+        margin-left: 100px;
+    }
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
 </head>
 
 
-<body>
-  <p><center><button id = "button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    <c>Activity</c>
-  </button>
-  <!--  Activity Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Activities</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Take a walk</p>
-          <p>Journal</p>
-          <p>Take a nap </p>
-          <p>Read a good book or listen to an audiobook </p>
-          <p>Color</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+<body id = "stressbody">
+  <div id = "allstuff">
+    <d><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img src="favicon.ico"></span></d>
+    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+    <div id="hello"><center>Stress Relief</center></div>
 
-        </div>
-      </div>
-    </div>
+    <div id="prof"><img src="empty-profile.png" height="46" width="46"></div>
+    <div id="notif"><img src="notificationbell.png" height="46" width="46"></div>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index4.html">Home</a>
+    <a href="#">Calendar</a>
+    <a href="index5.html">Study Tips</a>
+    <a href="#">Stress Relief</a>
+    <a href="index.html">Time Manager</a>
   </div>
-   <button id = "button1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
-    <c>Video</c>
-  </button>
-  <!--Video Modal -->
-  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Videos</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GLy2rYHwUqY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
-
-        <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/wxxs6qh1KLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
-
-        <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/rmnSpUgOvyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
-
-        <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/aTzoNNf__As" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
-
-        <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/-3PDbSuCfYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
-
-        <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/sBoVGqiSzr4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </p>
 
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button id = "button2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-   <c>Music</c>
-  </button>
-  <!-- Music Modal -->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>
-            <iframe src="https://open.spotify.com/user/jacquelinefionaleung/playlist/33Y6wyEGJXALWnBZvgnLDe" width="100%" height="390" scrolling="no" frameborder="no" allowtransparency="true"></iframe>
-          </p>
+      <center><button id = "Activity" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <c>Activity</c>
+      </button>
 
-          <p>
-            <iframe src="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX5bjCEbRU4SJ" width="100%" height="390" scrolling="no" frameborder="no" allowtransparency="true"></iframe>
-          </p>
-
-          <p>
-            <iframe src="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXaImRpG7HXqp" width="100%" height="390" scrolling="no" frameborder="no" allowtransparency="true"></iframe>
-          </p>
-
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZYbU82GVz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HhEB7UpYbyw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </center></p>
-  <p><center> <button id = "button3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
-    <c>Meditation</c>
-  </button>
-  <!--Meditation Modal -->
-  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>
-            <iframe src="http://how-to-meditate.org/" width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
-          </p>
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6p_yaNFSYao" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-          <p>
-            <iframe src="https://www.gaiam.com/blogs/discover/meditation-101-techniques-benefits-and-a-beginner-s-how-to" width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
-          </p>
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ufemXurHN_Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-
-          <p>
-            <iframe src="https://www.mindful.org/meditation/" width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
-          </p>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button id = "button4" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
-    <c>Quick DIY</c>
-  </button>
-  <!-- Quick DIY Modal -->
-  <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-
-          <p>
-            <iframe src="https://www.bettycrocker.com/recipes/ultimate-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57 " width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
-          </p>
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nNOioNDsg2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ndp2gq6wveM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/eaALjlyKDZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-          <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fAz7xH1Yc0Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </p>
-
-          <!-- <form action="action_page.php" style="border:1px solid #ccc">
-            <div class="container">
-              <h1>Sign Up</h1>
-              <p>Please fill in this form to create an account.</p>
-              <hr>
-              <p><label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required></p>
-              <p><label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required><p>
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <!--  Activity Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Activities</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-          </form> -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Sign Up</button>
+            <div class="modal-body">
+              <p>Take a walk</p>
+              <p>Journal</p>
+              <p>Take a nap </p>
+              <p>Read a good book or listen to an audiobook </p>
+              <p>Color</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+       <button id = "video" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+        <c>Video</c>
+      </button>
+      <!--Video Modal -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Videos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <p>
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/GLy2rYHwUqY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+
+            <p>
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/wxxs6qh1KLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+
+            <p>
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/rmnSpUgOvyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+
+            <p>
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/aTzoNNf__As" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+
+            <p>
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/-3PDbSuCfYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+
+            <p>
+              <iframe width="400" height="315" src="https://www.youtube.com/embed/sBoVGqiSzr4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id = "music" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+       <c>Music</c>
+      </button>
+      <!-- Music Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Music</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://open.spotify.com/embed/album/0uufS3CHdOk30AhJM1sx44" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+              <iframe src="https://open.spotify.com/embed/album/4YwxdwsnGkCqmTR9A5t6N9" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+              <iframe src="https://open.spotify.com/embed/album/0uufS3CHdOk30AhJM1sx44" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/1ZYbU82GVz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/HhEB7UpYbyw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id = "button3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+        <c>Meditation</c>
+      </button>
+      <!--Meditation Modal -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Meditation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <iframe src="http://how-to-meditate.org/" width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
+              </p>
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/6p_yaNFSYao" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+              <p>
+                <iframe src="https://www.gaiam.com/blogs/discover/meditation-101-techniques-benefits-and-a-beginner-s-how-to" width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
+              </p>
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/ufemXurHN_Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+
+              <p>
+                <iframe src="https://www.mindful.org/meditation/" width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
+              </p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id = "button4" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+        <c>Quick DIY</c>
+      </button>
+      <!-- Quick DIY Modal -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Quick DIY</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <p>
+                <iframe src="https://www.bettycrocker.com/recipes/ultimate-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57 " width="100%" height="390" scrolling="yes" frameborder="no" allowtransparency="true"></iframe>
+              </p>
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/nNOioNDsg2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/ndp2gq6wveM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/eaALjlyKDZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+              <p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/fAz7xH1Yc0Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </p>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </center>
+      <div id="relax"><center><img src="stress_picture.jpg" height="auto" width="auto"></center></div>
+      <div id="keepCalm"><center><img src="keepCalm_picture.jpg" height="auto" width="auto"></center></div>
+
+
+        <script src="stressrelief.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </div>
-  </center><p>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
