@@ -2,28 +2,31 @@
 
 <html>
   <head>
-
     <link rel="stylesheet" href="style2.css">
-    <title>Time Manager</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link rel="style2.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Time Manager</title>
     <style>
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        width: 60%;
-        border: 1px solid #ddd;
-    }
-    th, td {
-        text-align: left;
-        padding: 8px;
-        background-color:	#FFEBEE    ;
-    }
-    tr:nth-child(even){background-color: #f2f2f2}
+      table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 90%;
+          border: 1px solid #ddd;
+      }
+      th, td {
+          text-align: left;
+          padding: 8px;
+          background-color:	#FFEBEE    ;
+      }
+      tr:nth-child(even){background-color: #f2f2f2}
     </style>
   </head>
 
   <body id="timebody">
+  <!-- Nav Bar -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">Home</a>
@@ -32,33 +35,29 @@
       <a href="stressrelief.html">Stress Relief</a>
       <a href="timemanager.html">Time Manager</a>
     </div>
-    <d id="iconplacement"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img src=favicon.ico></span></d>
+    <span class="navIcon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img class="navIcon" src=favicon.ico></span>
+    <!-- Nav Right Side Icons -->
+    <div id="prof">
+      <img src="empty-profile.png" height="46" width="46">
+    </div>
+    <div id="notif">
+      <img src="notificationbell.png" height="46" width="46">
+    </div>
+    <center>
+    <div id="timemanagerheading">
+      Time Manager
+    </div>
+    </center>
+  
 
-   <center><div id="timemanagerheading">Time Manager</div></center>
+  <!-- assignment input area -->
+  <div id="assignmentArea">
 
-
-   <link rel="style2.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-   <!-- <form class="example" action="action_page.php">
-     <input type="text" placeholder="Search.." name="search">
-     <button type="submit"><i class="fa fa-search"></i></button>
-   </form> -->
-
-
-   <h2>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta name="description" content="A simple Pomo Timer">
-     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
-     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-     <title>Pomo Timer</title>
-   </h2>
-
-
-<!-- here -->
-    <p id="info"> Input assignments in order of what you want completed.</p>
-
-    <div style="overflow-x:auto;">
+    <p id="info"> 
+      Input assignments in order of what you want completed.
+    </p>
+    <div>
+    <!-- <div style="overflow-x:auto;"> -->
       <p id="clock"></p>
       <table id= "mytable">
         <tr>
@@ -71,25 +70,28 @@
         </tr>
       </table>
       <p id="help"> Press submit once you have all of your assignments listed. </p>
-      <button id= "button" onclick="new_row()">Add Assignment</button>
-      <button id="submit" onclick="submit_assignments()"> Submit</button>
-      <p id="demo"></p>
+      <button class= "btn buttonStudyTips" onclick="new_row()">Add Assignment</button>
+      <button class= "btn buttonStudyTips" onclick="submit_assignments()"> Submit</button>
+    </div>
+  </div>
 
+  <div id="timerArea">
+  <!--timer -->
       <div class="container">
         <div class="timer">
-          <div id = "timerfontsize" class="clock"><span contenteditable="true" id="min">10</span><span>:</span><span contenteditable="true" id="sec">00</span></div>
-          <div>
-            <p><div class="indicators">Min&nbsp;&nbsp;:&nbsp;&nbsp;Sec</div></p>
+          <div id= "timerfontsize" class="clock">
+            <span contenteditable="true" id="min">10</span><span>:</span>
+            <span contenteditable="true" id="sec">00</span></br>
           </div>
-
+          <div class="indicators">Min&nbsp;&nbsp;:&nbsp;&nbsp;Sec</div>
         </div>
         <div class="controls">
           <div class='stBtn'>Start</div>
           <div class='refresh'>Reset</div>
         </div>
-        <div class="footer" align="center">Click on the numbers<br>of the timer to edit</div>
-      </div>
-
+        <div class="footer">Click on the numbers<br>of the timer to edit</div>
+    </div>
+  </div>
 
       <!-- <p id= "break"> You will get a 5 minute break in between each assignment :)</p> -->
 

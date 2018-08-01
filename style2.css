@@ -224,6 +224,7 @@ body {
  font-style: italic;
  font-weight: 100;
  float: left;
+ text-align:center;
 }
 /* .container {
 padding: 16px;
@@ -847,6 +848,7 @@ input {
 ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 /* Style the list items */
@@ -997,43 +999,23 @@ ul li.checked::before {
   margin-top: 75px;
 }
 
+#button, #button1 {
+  background-color: #ccccff;
+  border-color: #ccccff;
+}
+
+#button1 {
+  margin-left: 15px;
+}
 
 
 
 
-
-
-
-#buttonF{
-  margin: 10px;
+.buttonStudyTips{
+  margin: 1px 10px 30px 10px;
   background-color:#E8DAEF   ;
   border-color: none;
-}
-#buttonA{
-  margin: 10px;
-  background-color:#E8DAEF     ;
-  border-color: none;
-}
-#buttonB{
-  margin: 10px;
-  background-color:#E8DAEF   ;
-  border-color: none;
-}
 
-#buttonC{
-  margin: 10px;
-  background-color: #E8DAEF      ;
-  border-color: none;
-}
-#buttonD{
-  margin: 10px;
-  background-color: #E8DAEF     ;
-  border-color: none;
-}
-#buttonE{
-  margin: 10px;
-  background-color:#E8DAEF    ;
-  border-color: none;
 }
 
 #stressbody {
@@ -1054,8 +1036,9 @@ ul li.checked::before {
   /* border: 2px solid black; */
   border:none;
   margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 30px;
-  width: 300px;
+  /*width: 300px;*/
   font: 400 90px/0.8 'Cookie', Helvetica, sans-serif;
   /* background-color:#FFEBEE    ; */
   padding: 10px;
@@ -1140,8 +1123,8 @@ body {
 }
 .footer {
  position: fixed;
- right:250px;
- top: 440px;
+ right:120px;
+ top: 500px;
  padding-bottom: 2em;
  color: black;
  font-style: italic;
@@ -1149,44 +1132,51 @@ body {
  font-weight: 100;
 
 }
+
+
+
+/*Timer Style*/
+
 .container {
-  position: fixed;
-  top: 20px;
-  left: 900px;
-  margin-top:50px;
-  /* border: 2px solid black; */
+  /*position: fixed;*/
+  /*top: 20px;*/
+  /*left: 900px;*/
+  /*margin-top:50px;*/
+
   font-size: 30px;
-  width: 300px;
+  max-width: 40%;
   height: 350px;
   padding: 10px;
-  color:Black;
+  /*color: black;*/
 
- height: 50%;
- width: 24%;
- padding-top: 10vh;
- background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
- background-blend-mode: multiply, multiply;
-
+ /*height: 50%;*/
+ /*width: 20%;*/
+ /*padding-top: 10vh;*/
+ /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;*/
+ /*background-blend-mode: multiply, multiply;*/
+ display: inline;
 }
 
 .timer {
  position: fixed;
-
- left: 903px;
+ padding-left: 20px;
  min-height: 100px;
- width: 360px;
+ max-width: 25%;
  margin: auto;
- background-color: white;
+ /*background-color: white;*/
  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.6);
- display: flex;
+ display: inline;
 
 
 }
 
 #timerfontsize {
 
- font-size: 4em;
+ font-size: 3em;
 }
+
+
+
 
 .clock {
 
@@ -1194,38 +1184,39 @@ body {
 
 }
 
-.indicators {
+/*.indicators {
 
- font-size: 1.2em;
- text-align: center;
+ font-size: 1em;
+ text-align: left;
  font-weight: 100;
 
-}
+}*/
 
 .stBtn {
  text-align: center;
- font-size: 1em;
- width: 145px;
- height: 75px;
- line-height: 65px;
+ font-size: 25px;
+ width: 100px;
+ height: 30px;
+ line-height: 34px;
  background-color: aquamarine;
- margin-top: 2em;
+ /*margin-top: 75px;*/
  margin-bottom: 0.5em;
  margin-right: 0.5em;
  border-radius: 20px;
  cursor: pointer;
  position: fixed;
  left: 935px;
- top:300px;
+ top:400px;
 
 }
 
 .refresh {
  text-align: center;
- font-size: 1em;
- width: 145px;
- height: 75px;
- line-height: 65px;
+ font-size: 25px;
+ width: 100px;
+ height: 30px;
+ line-height: 34px;
+ margin-top: 75px;
  background-color: aquamarine;
  margin-top: 2em;
  margin-bottom: 0.5em;
@@ -1233,7 +1224,7 @@ body {
  cursor: pointer;
  position: fixed;
  left:1090px;
- top: 300px;
+ top: 400px;
 
 }
 
@@ -1242,6 +1233,7 @@ body {
  justify-content: center;
 
 }
+
 
 .red {
  background-color: red;
@@ -1276,4 +1268,19 @@ body {
   margin-top: 5px;
 }
 */
+
+#assignmentArea {
+  display: inline-block;
+  width: 70%;
+  vertical-align: text-top;
+}
+
+#timerArea {
+  margin-top: 63px;
+  width: 25%;
+  display: inline-block;
+  /*background-color: black;*/
+  vertical-align: text-top;
+}
+
 
